@@ -1,0 +1,8 @@
+#lang racket
+
+(define (digits n)
+  (if (zero? n)
+      '()
+      (cons (remainder n 10) (digits (quotient n 10)))))
+
+(apply + (digits (expt 2 1000)))

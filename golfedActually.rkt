@@ -1,0 +1,1 @@
+#lang racket (for((i "p£¤¨O£V¢O¤£O£¢OOO¤¡¢"))(display(integer->char(-(char->integer i)47))))

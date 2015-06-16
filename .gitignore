@@ -1,0 +1,4 @@
+*.bak
+*.dep
+*.zo
+/compiled

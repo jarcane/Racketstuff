@@ -1,0 +1,23 @@
+body {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: sans-serif;
+	background-color: rgb(240,240,240) 
+}
+
+p { text-indent: 10 }
+h1 { 
+	font-weight: bold;
+	text-align: center
+	}
+h2 {
+	font-weight: italic;
+	}
+.post { 
+	background-color: rgb(224,224,224);
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%
+	}
+form { text-align: center }

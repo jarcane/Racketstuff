@@ -1,0 +1,1 @@
+#lang racket (define (s f l)(match l['() '()][`(,h .,t)`(,@(s f(filter(curry(negate f)h)t)),h,@(s f(filter(curry f h)t)))]));(sort fun list)

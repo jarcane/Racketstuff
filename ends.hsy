@@ -1,0 +1,6 @@
+#lang heresy
+
+(def fn ends (l)
+     (select
+      ((null? l) l)
+      (else (join l (ends (tail l))))))
