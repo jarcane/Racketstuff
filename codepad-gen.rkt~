@@ -18,23 +18,9 @@
        (zipwith equal? code)
        (foldl (fn (a b) (and a b)) True)))
 
-(rem (rkt:time
+(rkt:time
  (do loop
    (def try (gen-code))
    (if (check-code? try) then
        (break try)
-       else Null))))
-
-(rkt:time
- (for (a in (range 0 to 9))
-   (for (b in (range 0 to 9))
-     (for (c in (range 0 to 9))
-       (for (d in (range 0 to 9))
-         (for (l in '(A B))
-           (def try (list a b c d l))
-           (print try)
-           (if (check-code? try)
-               then
-               (break try)
-               else
-               (rkt:sleep 1))))))))
+       else Null)))
